@@ -24,10 +24,14 @@ function App() {
     },
   ];
 
+  const newExpenseHandler = (newExpense) => {
+    console.log("in app js");
+    console.log(newExpense);
+  };
   return (
     <div>
       <h1 className="title">Expense Tracker App</h1>
-      <NewExpense />
+      <NewExpense onNewExpense={newExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
