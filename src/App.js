@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <h1 className="title">Expense Tracker App</h1>
-      <NewExpense onNewExpense={newExpenseHandler} />
+      <NewExpense onNewExpense={newExpenseHandler} />;
       <Expenses items={expenses} />
     </div>
   );
